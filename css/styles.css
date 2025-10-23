@@ -1,0 +1,269 @@
+/* ============================================ */
+/* СПІЛЬНІ СТИЛІ ДЛЯ ВСІХ СТОРІНОК */
+/* ============================================ */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffadf;
+}
+
+header {
+  background: #23144e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: Serif;
+}
+
+h2 {
+  font-family: Serif;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  text-align: center;
+}
+
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+  color: #000000;
+  margin: 10px 0;
+  padding-left: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #deebfb;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #4e96ec;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main {
+  padding: 20px;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: center;
+}
+
+ul {
+  margin: 10px 0;
+}
+
+mark {
+  background-color: #deebfb;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: white;
+  margin-top: 20px;
+}
+
+/* ============================================ */
+/* СТИЛІ ДЛЯ INDEX.HTML */
+/* ============================================ */
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.bio-section {
+  overflow: auto;
+  margin: 30px 0;
+}
+
+.float-left {
+  float: left;
+  margin: 0 25px 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stacked-images {
+  position: relative;
+  height: 350px;
+  margin: 50px auto 80px auto;
+  width: 480px;
+  display: block;
+}
+
+.stacked-img {
+  position: absolute;
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.img-back {
+  left: 0;
+  top: 40px;
+  transform: rotate(-8deg);
+  z-index: 1;
+}
+
+.img-middle {
+  left: 100px;
+  top: 0;
+  transform: rotate(3deg);
+  z-index: 2;
+}
+
+.img-front {
+  left: 200px;
+  top: 30px;
+  transform: rotate(8deg);
+  z-index: 3;
+}
+
+.stacked-img:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+}
+
+figure {
+  text-align: center;
+  margin: 20px auto;
+}
+
+/* ============================================ */
+/* СТИЛІ ДЛЯ AWARDS.HTML */
+/* ============================================ */
+
+.award-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.award-item {
+  width: 600px;
+  padding: 15px;
+  border: 1px solid #605d45;
+  border-radius: 8px;
+  text-align: center;
+  background: #deebfb;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.award-item img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 400px;
+}
+
+/* ============================================ */
+/* СТИЛІ ДЛЯ CONTACT.HTML */
+/* ============================================ */
+
+form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.contact-form {
+  width: 400px;
+}
+
+.forms-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.login-form,
+.registration-form {
+  width: 350px;
+}
+
+.registration-form {
+  width: 380px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 2px solid #007BFF;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(to bottom, #23144e, #4e96ec);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
