@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Контакти</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Біографія</a></li>
+        <li><a href="awards.html">Нагороди</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Напишіть мені</h2>
+      <form class="contact-form">
+        <label>Ім'я:<br>
+          <input type="text" name="name" required>
+        </label><br><br>
+
+        <label>Email:<br>
+          <input type="email" name="email" required>
+        </label><br><br>
+
+        <label>Повідомлення:<br>
+          <textarea name="message" rows="5" required></textarea>
+        </label><br><br>
+
+        <button type="submit">Відправити</button>
+      </form>
+    </section>
+
+    <section class="forms-container">
+      <form class="login-form">
+        <h3>Вхід</h3>
+        <label>Логін:<br>
+          <input type="text" name="login" placeholder="Введіть логін" required>
+        </label><br><br>
+
+        <label>Пароль:<br>
+          <input type="password" name="password" placeholder="Введіть пароль" required>
+        </label><br><br>
+
+        <label>
+          <input type="checkbox" name="remember"> Запам'ятати мене
+        </label><br><br>
+
+        <button type="submit">Увійти</button>
+      </form>
+
+      <form class="registration-form">
+        <h3>Реєстрація</h3>
+        <label>Ім'я:<br>
+          <input type="text" name="firstname" placeholder="Ваше ім'я" required>
+        </label><br><br>
+
+        <label>Прізвище:<br>
+          <input type="text" name="lastname" placeholder="Ваше прізвище" required>
+        </label><br><br>
+
+        <label>Email:<br>
+          <input type="email" name="email" placeholder="example@mail.com" required>
+        </label><br><br>
+
+        <label>Стать:<br>
+          <input type="radio" name="gender" value="male"> Чоловіча
+          <input type="radio" name="gender" value="female"> Жіноча
+        </label><br><br>
+
+        <label>Дата народження:<br>
+          <input type="date" name="birthdate" required>
+        </label><br><br>
+
+        <label>Країна проживання:<br>
+          <select name="country" required>
+            <option value="">Оберіть країну</option>
+            <option value="ukraine">Україна</option>
+            <option value="usa">США</option>
+            <option value="uk">Великобританія</option>
+            <option value="other">Інша</option>
+          </select>
+        </label><br><br>
+
+        <button type="submit">Зареєструватися</button>
+      </form>
+    </section>
+
+  <footer>
+    <small>Email: info@sabrinacarpenter.com</small>
+    <div><a href="https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B"><img src="images/51rttY7a+9L._h1_.png" alt="Spotify" width="30">
+        <a href="https://www.instagram.com/sabrinacarpenter/"><img src="images/Instagram.png" alt="Instagram" width="30">
+        <a href="https://music.apple.com/us/artist/sabrina-carpenter/390647681"><img src="images/applemusic.png" alt="Apple music" width="30"></div>
+  </footer>
+</body>
+</html>
